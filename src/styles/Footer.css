@@ -1,0 +1,27 @@
+.footer{
+    background-color: #020202;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height: 100px;
+    
+}
+.smedia svg {
+    margin: 30px;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+.copyright{
+    display: flex;
+}
+.copyright svg {
+    margin-top: 6px;
+    size: smaller;
+}
+.copyright p {
+    margin-top: 10px;
+    font-size: smaller;
+}

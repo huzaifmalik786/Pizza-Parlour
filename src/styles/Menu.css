@@ -1,0 +1,74 @@
+.menu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(228, 228, 228);
+    padding-bottom: 20px;
+}
+
+.menu .menutitle{
+    font-family: cursive, fantasy;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 50;
+}
+.menulist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 75vw;
+    height: auto;
+    place-items: center;
+}
+
+.menuitem{
+    height: 300px;
+    width: 250px;
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.menuitem:hover{
+    box-shadow: 0 3px 15px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+.menuitem h1 {
+    font-size: 30px;
+    font-weight: 50;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+.menuitem p {
+    margin-top: 5px;
+    display: flex;
+    font-size: 20px;
+    margin-left: 8px;
+}
+.menuitem p svg{
+    font-size: 20px;
+}
+
+.menuitem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px ;
+    width: 100%;
+    height: 170px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 1000px){
+    .menulist{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 700px){
+    .menulist{
+        grid-template-columns: 1fr;
+    }
+}
